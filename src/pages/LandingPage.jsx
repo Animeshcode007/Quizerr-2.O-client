@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { usePlayer } from "../contexts/PlayerContext";
 import { useSocket } from "../contexts/SocketContext";
-import { motion } from "framer-motion"; 
+import { motion } from "framer-motion";
 
 const LandingPage = () => {
   const navigate = useNavigate();
@@ -34,7 +34,7 @@ const LandingPage = () => {
     setPlayerName(trimmedName);
 
     if (!socket.connected) {
-      socket.connect(); 
+      socket.connect();
     }
     navigate("/lobbies");
   };
@@ -105,6 +105,54 @@ const LandingPage = () => {
 
       <footer className="py-8 mt-auto">
         <p className="text-xs text-gray-400">© 2023 Quizerr Masters</p>
+        <p className="text-xs text-gray-400 mt-1 mb-2">
+          {" "}
+          {/* Added mb-2 for spacing before icons */}
+          Crafted with{" "}
+          <span role="img" aria-label="laptop computer">
+            💻
+          </span>{" "}
+          by{" "}
+          <p className="hover:text-brand-green-bright underline">{Animesh}</p>
+        </p>
+        <div className="flex justify-center items-center space-x-4">
+          {devInfo.github && (
+            <a
+              href="https://github.com/Animeshcode007"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub Profile"
+              title="GitHub"
+              className="text-gray-400 hover:text-brand-green-bright transition-colors duration-150"
+            >
+              <FaGithub size={22} />
+            </a>
+          )}
+          {devInfo.linkedin && (
+            <a
+              href="https://www.linkedin.com/in/animesh-khare-951282289/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn Profile"
+              title="LinkedIn"
+              className="text-gray-400 hover:text-brand-green-bright transition-colors duration-150"
+            >
+              <FaLinkedin size={22} />
+            </a>
+          )}
+          {devInfo.instagram && (
+            <a
+              href="https://instagram.com/animesh_khare001"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram Profile"
+              title="Instagram"
+              className="text-gray-400 hover:text-brand-green-bright transition-colors duration-150"
+            >
+              <FaInstagram size={22} />
+            </a>
+          )}
+        </div>
       </footer>
     </div>
   );

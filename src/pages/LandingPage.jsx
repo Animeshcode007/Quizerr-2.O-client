@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { usePlayer } from "../contexts/PlayerContext";
+import { FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
 import { useSocket } from "../contexts/SocketContext";
 import { motion } from "framer-motion";
 
@@ -105,6 +106,38 @@ const LandingPage = () => {
 
       <footer className="py-8 mt-auto">
         <p className="text-xs text-gray-400">© 2023 Quizerr Masters</p>
+        <div className="flex justify-center items-center space-x-4 mt-4">
+          <a
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram Profile"
+            title="Instagram"
+            className="text-gray-400 hover:text-brand-green-bright transition-colors duration-150"
+          >
+            <FaInstagram size={22} />
+          </a>
+          <a
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn Profile"
+            title="LinkedIn"
+            className="text-gray-400 hover:text-brand-green-bright transition-colors duration-150"
+          >
+            <FaLinkedin size={22} />
+          </a>
+          <a
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub Profile"
+            title="GitHub" // Tooltip for clarity
+            className="text-gray-400 hover:text-brand-green-bright transition-colors duration-150"
+          >
+            <FaGithub size={22} />
+          </a>
+        </div>
       </footer>
     </div>
   );

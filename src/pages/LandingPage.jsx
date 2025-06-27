@@ -108,7 +108,7 @@ const LandingPage = () => {
         <p className="text-xs text-gray-400">© 2025 Quizerr Masters</p>
         <div className="flex justify-center items-center space-x-4 mt-4">
           <a
-            href=""
+            href="https://www.instagram.com/animesh_khare001/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Instagram Profile"
@@ -118,7 +118,7 @@ const LandingPage = () => {
             <FaInstagram size={22} />
           </a>
           <a
-            href=""
+            href="https://www.linkedin.com/in/animesh-khare-951282289/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn Profile"
@@ -128,7 +128,7 @@ const LandingPage = () => {
             <FaLinkedin size={22} />
           </a>
           <a
-            href=""
+            href="https://github.com/Animeshcode007"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub Profile"

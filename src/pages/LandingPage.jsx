@@ -105,7 +105,7 @@ const LandingPage = () => {
       </main>
 
       <footer className="py-8 mt-auto">
-        <p className="text-xs text-gray-400">© 2023 Quizerr Masters</p>
+        <p className="text-xs text-gray-400">© 2025 Quizerr Masters</p>
         <div className="flex justify-center items-center space-x-4 mt-4">
           <a
             href=""
